@@ -4,14 +4,15 @@
 
 Use nowcoder for [OJ](https://www.nowcoder.com/ta/coding-interviews)
 
-Debug code with [Intellij IDEA](http://www.jetbrains.com/idea)![](http://jb.gg/badges/official.svg)
+Debug code with [Intellij IDEA](http://www.jetbrains.com/idea)
+![](http://jb.gg/badges/official.svg)
 
 ## Chapter 2
 
 - ~~二维数组的查找~~
 - ~~替换空格~~
-- 从尾到头打印链表
-- 重建二叉树
+- ~~从尾到头打印链表~~
+- ~~重建二叉树~~
 - 用两个栈实现队列
 - 旋转数组的最小数字
 - 斐波那契数列
