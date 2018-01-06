@@ -1,7 +1,9 @@
 package chapter2;
 
 
-
+/**
+ * Created by JasonRen on 2018/1/5
+ */
 public class FindInPartiallySortedMatrix {
     public static boolean findInPartiallySortedMatrix(int target, int [][] array){
         int rows = array.length;

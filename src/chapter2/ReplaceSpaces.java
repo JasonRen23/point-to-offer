@@ -1,5 +1,8 @@
 package chapter2;
 
+/**
+ * Created by JasonRen on 2018/1/5
+ */
 public class ReplaceSpaces {
     public static String replaceSpace(StringBuffer str){
         int originLength = str.length();
