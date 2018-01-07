@@ -105,7 +105,7 @@ public class ReConstructBinaryTree {
         int[] preorder = {1, 2, 4, 7, 3, 5, 6, 8};
         int[] inorder = {4, 7, 2, 1, 5, 3, 8, 6};
         TreeNode root = reConstructBinaryTree(preorder, inorder);
-        printPostOrder(root);
+        printPreOrder(root);
     }
 
     // 所有结点都没有右子结点  
