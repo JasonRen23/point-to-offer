@@ -13,6 +13,7 @@ Debug code with [Intellij IDEA](http://www.jetbrains.com/idea)
 - ~~从尾到头打印链表~~
 - ~~重建二叉树~~
 - ~~用两个栈实现队列~~
+- ~~快速排序~~
 - ~~旋转数组的最小数字~~
 - ~~斐波那契数列~~
 - ~~跳台阶~~
