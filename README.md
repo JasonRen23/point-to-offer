@@ -15,7 +15,10 @@ Debug code with [Intellij IDEA](http://www.jetbrains.com/idea)
 - ~~用两个栈实现队列~~
 - ~~旋转数组的最小数字~~
 - ~~斐波那契数列~~
-- 二进制中1的个数
+- ~~跳台阶~~
+- ~~变态跳台阶~~
+- ~~矩形覆盖~~
+- ~~二进制中1的个数~~
 
 ## Chapter 3
 
