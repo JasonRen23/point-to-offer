@@ -9,23 +9,25 @@ public class QuickSort {
             throw new RuntimeException("Invalid parameter!");
         }
 
-        int index = new Random().nextInt(end + 1);
-//        System.out.println(index);
+        int index = new Random().nextInt(end);
+        int pivotValue = data[index];
+
+        int storeIndex = start - 1;
         Swap(data, index, end);
 
-        int small = start - 1;
-        for(index = start; index < end; ++ index){
-            if(data[index] < data[end]){
-                ++small;
-                if(small != index){
-                    Swap(data, index, small);
+        for(int i = start; i < end; ++i){
+            if(data[i] < pivotValue){
+                ++storeIndex;
+                if(i != storeIndex){
+                    Swap(data, storeIndex, i);
                 }
             }
         }
 
-        ++small;
-        Swap(data, small, end);
-        return small;
+        ++storeIndex;
+        Swap(data, storeIndex, end);
+
+        return storeIndex;
 
     }
 
@@ -49,10 +51,10 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] array = {4,1,7,2,3,5};
-        System.out.println(Arrays.toString(array));
+        int[] array = {4,1,7,6};
+        System.out.println("Before quickSort. " + Arrays.toString(array));
         QuickSort(array, 0, array.length-1);
 //        Swap(array, 0, 1);
-        System.out.println(Arrays.toString(array));
+        System.out.println("After quickSort. " + Arrays.toString(array));
     }
 }
