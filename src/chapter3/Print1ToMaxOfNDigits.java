@@ -1,5 +1,8 @@
 package chapter3;
 
+/**
+ * Created by JasonRen on 2018/1/11
+ */
 public class Print1ToMaxOfNDigits {
     public static void  print1ToMaxOfNDigits(int n){
         if(n <= 0){
