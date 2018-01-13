@@ -29,13 +29,13 @@ Debug code with [Intellij IDEA](http://www.jetbrains.com/idea)
 - ~~调整数组顺序使奇数位于偶数前面~~
 - ~~链表中倒数第k个结点~~
 - ~~反转链表~~
-- 合并两个排序的链表
-- 树的子结构
-- 二叉树的镜像
-- 顺时针打印矩阵
+- ~~合并两个排序的链表~~
+- ~~树的子结构~~
 
 ## Chapter 4
 
+- 二叉树的镜像
+- 顺时针打印矩阵
 - 包含min函数的栈
 - 栈的压入、弹出序列
 - 从上往下打印二叉树
@@ -44,5 +44,3 @@ Debug code with [Intellij IDEA](http://www.jetbrains.com/idea)
 - 复杂链表的复制
 - 二叉搜索树与双向链表
 - 字符串的排列
-- 数组中出现次数超过一半的数字
-- 最小的k个数
