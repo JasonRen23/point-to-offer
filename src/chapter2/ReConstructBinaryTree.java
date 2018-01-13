@@ -61,8 +61,8 @@ public class ReConstructBinaryTree {
          */
         if(root != null){
             System.out.print(root.val);
-            printPostOrder(root.left);
-            printPostOrder(root.right);
+            printPreOrder(root.left);
+            printPreOrder(root.right);
 
         }
     }
@@ -73,9 +73,9 @@ public class ReConstructBinaryTree {
          * @return: void
          */
         if(root != null){
-            printPostOrder(root.left);
+            printInOrder(root.left);
             System.out.print(root.val);
-            printPostOrder(root.right);
+            printInOrder(root.right);
 
         }
     }
