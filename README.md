@@ -34,8 +34,8 @@ Debug code with [Intellij IDEA](http://www.jetbrains.com/idea)
 
 ## Chapter 4
 
-- 二叉树的镜像
-- 顺时针打印矩阵
+- ~~二叉树的镜像~~
+- ~~顺时针打印矩阵~~
 - 包含min函数的栈
 - 栈的压入、弹出序列
 - 从上往下打印二叉树
