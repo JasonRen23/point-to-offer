@@ -38,5 +38,45 @@ public class TreeNode {
 //        this.right = right;
 //    }
 
+    public static void printPreOrder(TreeNode root){
+        /**
+         * @description: preOrder of the Tree(recursive method)
+         * @param: [root] root of the Tree
+         * @return: void
+         */
+        if(root != null){
+            System.out.print(root.val + " ");
+            printPreOrder(root.left);
+            printPreOrder(root.right);
+
+        }
+    }
+    public static void printInOrder(TreeNode root){
+        /**
+         * @description: inOrder of the Tree(recursive method)
+         * @param: [root] root of the Tree
+         * @return: void
+         */
+        if(root != null){
+            printInOrder(root.left);
+            System.out.print(root.val + " ");
+            printInOrder(root.right);
+
+        }
+    }
+
+    public static void printPostOrder(TreeNode root){
+        /**
+         * @description: postOrder of the Tree(recursive method)
+         * @param: [root] root of the Tree
+         * @return: void
+         */
+        if(root != null){
+            printPostOrder(root.left);
+            printPostOrder(root.right);
+            System.out.print(root.val + " ");
+        }
+    }
+
 }  
 
