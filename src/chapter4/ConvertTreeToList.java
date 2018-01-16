@@ -8,7 +8,7 @@ import dataStructure.TreeNode;
 public class ConvertTreeToList {
     public static TreeNode convert(TreeNode pRootOfTree){
         // 用于保存处理过程中的双向链表的尾结点
-        TreeNode[] lastNode = new TreeNode[1];
+        TreeNode[] lastNode = new TreeNode[1];// fail to use 'TreeNode lastNode = null', which will always be null in recursive
         convertNode(pRootOfTree, lastNode);
 
         // 找到双向链表的头结点
