@@ -28,14 +28,15 @@ public class GetNextNode {
             return pNode;
         BinaryTreeNode pNext = null;
         if(pNode.right != null){
-            BinaryTreeNode pRight = pNode.right;
-            while (pRight.left != null)
-                pRight = pRight.left;
-            pNext = pRight;
+            pNext = pNode.right;
+            // 如果目标节点的左节点不为空
+            while (pNext.left != null)
+                pNext = pNext.left;
         }
         else if(pNode.next != null){
             BinaryTreeNode pCurrent = pNode;
             BinaryTreeNode pParent = pNode.next;
+            // 如果父节点不为空，并且，子节点不是父节点的左孩子
             while (pParent != null && pCurrent != pParent.left){
                 pCurrent = pParent;
                 pParent = pParent.next;
