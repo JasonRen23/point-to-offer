@@ -83,5 +83,9 @@ public class TreeNode {
         node.right = right;
     }
 
-}  
+    @Override
+    public String toString() {
+        return val + "";
+    }
+}
 
