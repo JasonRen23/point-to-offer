@@ -78,5 +78,10 @@ public class TreeNode {
         }
     }
 
+    public static void assemble(TreeNode node, TreeNode left, TreeNode right) {
+        node.left = left;
+        node.right = right;
+    }
+
 }  
 
