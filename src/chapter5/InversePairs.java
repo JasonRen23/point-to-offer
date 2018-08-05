@@ -1,51 +1,53 @@
 package chapter5;
 
 public class InversePairs {
-    public static int InversePairs(int[] array){
-        if(array == null || array.length < 1){
+    public static int InversePairs(int[] array) {
+        if (array == null || array.length < 1) {
             return 0;
         }
         int[] copy = new int[array.length];
-        for(int i = 0; i < array.length; ++i){
+        for (int i = 0; i < array.length; ++i) {
             copy[i] = array[i];
         }
 
-        int count = InversePairsCore(array, copy, 0, array.length - 1);
+        long count = InversePairsCore(array, copy, 0, array.length - 1);
 
-        return count;
+        return (int) count % 1000000007;
     }
-    public static int InversePairsCore(int[] data, int[] copy, int start, int end){
-        if(start == end){
+
+    public static int InversePairsCore(int[] data, int[] copy, int start, int end) {
+        if (start == end) {
             copy[start] = data[start];
             return 0;
         }
 
         int len = (end - start) / 2;
-        int left = InversePairsCore(copy, data, start, start + len);
-        int right = InversePairsCore(copy, data, start + len + 1, end);
+        int left = InversePairsCore(copy, data, start, start + len)  % 1000000007;
+        int right = InversePairsCore(copy, data, start + len + 1, end) % 1000000007;
 
         int i = start + len;
 
         int j = end;
         int indexCopy = end;
         int count = 0;
-        while(i >= start && j >= start + len + 1){
-            if(data[i] > data[j]){
+        while (i >= start && j >= start + len + 1) {
+            if (data[i] > data[j]) {
                 copy[indexCopy--] = data[i--];
                 count += j - start - len;
-            }
-            else {
+                if(count >= 1000000007)
+                    count %= 1000000007;
+            } else {
                 copy[indexCopy--] = data[j--];
             }
         }
-        for(; i >= start; --i){
+        for (; i >= start; --i) {
             copy[indexCopy--] = data[i];
         }
-        for(; j >= start + len + 1; --j){
+        for (; j >= start + len + 1; --j) {
             copy[indexCopy--] = data[j];
         }
 
-        return left + right + count;
+        return (left + right + count) % 1000000007;
     }
 
     public static void main(String[] args) {
